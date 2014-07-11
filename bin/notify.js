@@ -1,5 +1,15 @@
 #!/usr/bin/env node
 
+var program = require('commander');
+
+program
+  .version('0.0.1')
+  .option('-m, --mail', 'Who to notify when host is back up and running')
+  .option('-s, --src_addr', 'What host to monitor')
+  .option('-n, --nonotify', 'No notification shown')
+
+program.parse(process.argv);
+
 var Notification = require('node-notifier');
 
 var notifier = new Notification();
