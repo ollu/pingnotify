@@ -1,0 +1,30 @@
+{
+  "name"      : "pingnotify",
+  "version"     : "0.0.1",
+  "description"   : "",
+  "url"             : "https://github.com/ollu/pingnotify",
+  "main"      : "./bin",
+  "bin"             : { "devcycle": "./bin/notify" },
+  "directories"     : { "test": "./test", "bin": "./bin" },
+  "dependencies"  : {
+            "node-notifier": ">=3.0.6",
+            "commander": ">=2.2.0"
+              },
+  "repository"    : {
+            "type": "git",
+            "url": "https://github.com/ollu"
+              },
+  "scripts"     : {
+            "test": "./bin/notify -h"
+            },
+  "keywords"    : [
+            "ping",
+            "notification",
+            "CLI"
+              ],
+  "author"      : {
+            "name": "Ola Lundén",
+            "email": "ola.lunden@gmail.com"
+              },
+  "license"     : "MIT"
+}
