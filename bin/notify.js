@@ -1,3 +1,5 @@
+#!/usr/bin/env node
+
 var Notification = require('node-notifier');
 
 var notifier = new Notification();
