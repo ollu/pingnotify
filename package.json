@@ -1,8 +1,7 @@
 {
   "name"        : "pingnotify",
   "version"     : "0.0.1",
-  "description" : "Ping host and get notification when host is online again via
-                   notification center.",
+  "description" : "Ping host and get notification when host is online again via notification center.",
   "url"         : "https://github.com/ollu/pingnotify",
   "main"        : "./bin",
   "bin"           : { "devcycle": "./bin/notify" },
