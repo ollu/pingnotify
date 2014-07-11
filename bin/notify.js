@@ -4,7 +4,7 @@ var notifier = new Notification();
 
 var child_process = require('child_process').exec;
 var title = "Agent of T.E.R.M.I.N.A.L";
-var subtitle = "";
+var subtitle = "Monitoring";
 var message = "";
 var default_host = "pong.sunet.se";
 var command = "ping -c 1 " + default_host;
