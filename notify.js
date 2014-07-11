@@ -3,10 +3,11 @@ var Notification = require('node-notifier');
 var notifier = new Notification();
 
 var child_process = require('child_process').exec;
-var command = "ping -c 1 localhost";
 var title = "Agent of T.E.R.M.I.N.A.L";
 var subtitle = "";
 var message = "";
+var default_host = "pong.sunet.se";
+var command = "ping -c 1 " + default_host;
 
 child_process(command,
   function (error, stdout, stderr) {
